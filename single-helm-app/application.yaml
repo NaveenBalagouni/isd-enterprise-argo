@@ -9,12 +9,12 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/NaveenBalagouni/isd-enterprise-argo.git'
-    path: apps-resources/single-helm-resource
-    targetRevision: main
+    path: charts/isdargo
+    targetRevision: HEAD
     helm:
       valueFiles:
         - values.yaml
-  project: non-prod-envoronment
+  project: default
   syncPolicy:
     automated:
       prune: true

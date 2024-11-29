@@ -5,10 +5,10 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: proj6-non-prod-env-single-helm
+    namespace: isd-argo-install
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/OpsMx/argo-sample-apps.git'
+    repoURL: 'https://github.com/NaveenBalagouni/isd-enterprise-argo.git'
     path: apps-resources/single-helm-resource
     targetRevision: main
     helm:

@@ -31,7 +31,7 @@ global:
 
   vela:
     # Please below string for all occurences in this file with proper dns entry to access the ISD UI eg: keycloak.example.ops.com$
-    host: enterprise-vela.argocd.opsmx.net
+    host: enterprise-isd-vela.argocd.opsmx.net
 
 #######################################################################################################################
 # Values of OES Database

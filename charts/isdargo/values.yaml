@@ -1352,7 +1352,7 @@ carinamanager:
 carinainstance:
   image:
     repository: carina-instance
-    tag: v1.14.1
+    tag: v1.15.3
     pullPolicy: IfNotPresent
   
   serviceAnnotations: {}

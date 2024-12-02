@@ -31,4 +31,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: default
-    namespace: opsmx-argo #Change the Namespace accordingly
+    namespace: isd-argo #Change the Namespace accordingly

@@ -1413,7 +1413,7 @@ ui:
   ## Image specific details
   image:
     repository: ubi8-oes-ui
-    tag: v4.1.8
+    tag: isd-argo-2024.08.00-202409060628
     pullPolicy: IfNotPresent
 
   serviceAnnotations: {}

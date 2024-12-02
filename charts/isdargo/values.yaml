@@ -1705,7 +1705,7 @@ sapor:
   ## Image specific details
   image:
     repository: ubi8-oes-sapor
-    tag: isd-argo-2024.08.00-202409061415
+    tag: v4.1.8
     pullPolicy: IfNotPresent
 
   annotations:

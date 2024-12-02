@@ -81,7 +81,7 @@ global:
 
   oesUI:
     protocol: https
-    host: oes.example.ops.com
+    host: isd-oes-ui.argocd.opsmx.net
     # Use below port when hostname above is an external IP instead of a hostname
     #port: 31466
 
@@ -119,7 +119,7 @@ global:
 
   vela:
     protocol: https
-    host: vela.example.ops.com
+    host: isd-oes-ui.argocd.opsmx.net
     #port: 31464
 
     serviceAnnotations: {}

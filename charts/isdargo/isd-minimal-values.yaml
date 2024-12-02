@@ -9,7 +9,7 @@ forwarder:
     image: quay.io/opsmxpublic/agent-client:v5.1.1
     serviceType: ClusterIP
     # Value is also used in sapor configuration for kubernetes.agent.serverHostName
-    host: isd-enterprise-argo.argocd.opsmx.net
+    host: isd-argo-in.argocd.opsmx.net
     ingress:
       annotations:
         kubernetes.io/ingress.class: nginx
@@ -27,11 +27,11 @@ forwarder:
 global:
   oesUI:
     # Please below string for all occurences in this file with proper dns entry to access the ISD UI eg: isdui.example.ops.com
-    host: isd-enterprise-argo-ui.argocd.opsmx.net
+    host: isd-oes-ui.argocd.opsmx.net
 
   vela:
     # Please below string for all occurences in this file with proper dns entry to access the ISD UI eg: keycloak.example.ops.com$
-    host: enterprise-isd-argo-vela.argocd.opsmx.net
+    host: isd-vela-argo.argocd.opsmx.net
 
 #######################################################################################################################
 # Values of OES Database

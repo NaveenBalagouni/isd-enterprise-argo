@@ -1851,7 +1851,7 @@ forwarder:
     image: quay.io/opsmxpublic/agent-client:v5.1.1
     serviceType: ClusterIP
     # Value is also used in sapor configuration for kubernetes.agent.serverHostName
-    host: isd-in-argo.tcbx.opsmx.org
+    host: isd-argo-in-argo.tcbx.opsmx.org
 
     ingress:
       annotations:

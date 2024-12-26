@@ -119,7 +119,7 @@ global:
 
   vela:
     protocol: https
-    host: isd-oes-vela.tcbx.opsmx.org
+    host: isd-argo-vela.tcbx.opsmx.org
     #port: 31464
 
     serviceAnnotations: {}

@@ -81,7 +81,7 @@ global:
 
   oesUI:
     protocol: https
-    host: isd-oes.tcbx.opsmx.org
+    host: isd-argo.tcbx.opsmx.org
     # Use below port when hostname above is an external IP instead of a hostname
     #port: 31466
 

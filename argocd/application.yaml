@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-helm-app
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/my-org/my-helm-repo.git
+    targetRevision: main
+    path: charts/my-app
+    helm:
+      releaseName: my-app
+      valueFiles:
+        - values.yaml
+      parameters:
+        - name: image.tag
+          value: "1.0.0"
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd-isd
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

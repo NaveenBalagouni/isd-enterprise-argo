@@ -1,0 +1,37 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: appset-isd-install
+  namespace: argocd
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/NaveenBalagouni/isd-enterprise-argo.git
+        revision: main
+        directories:
+          - path: charts/isdargo/*
+
+  template:
+    metadata:
+      name: appset-isd-install-app
+    spec:
+      project: default
+
+      source:
+        repoURL: https://github.com/my-org/my-apps.git
+        targetRevision: main
+        path: charts/isdargo
+        helm:
+          valueFiles:
+            - values.yaml
+
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: argocd-isd
+
+      # syncPolicy:
+      #   automated:
+      #     prune: true
+      #     selfHeal: true
+      #   syncOptions:
+          - CreateNamespace=true

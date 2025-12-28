@@ -7,24 +7,10 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/my-org/my-helm-repo.git
+    repoURL: https://github.com/NaveenBalagouni/isd-enterprise-argo.git
     targetRevision: main
-    path: charts/my-app
-    helm:
-      releaseName: my-app
-      valueFiles:
-        - values.yaml
-      parameters:
-        - name: image.tag
-          value: "1.0.0"
+    path: argocd
 
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd-isd
-
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true

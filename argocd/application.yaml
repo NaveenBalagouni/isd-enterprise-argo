@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/NaveenBalagouni/isd-enterprise-argo.git
     targetRevision: main
-    path: argocd
+    path: argocd/appsets
 
   destination:
     server: https://kubernetes.default.svc
